@@ -14,7 +14,7 @@ async function seed() {
         email: faker.internet.email(),
         username: faker.internet.userName(),
         password: faker.internet.password(),
-        profilePicture: `https://ui-avatars.com/api/?name=${encodeURIComponent(faker.name.findName())}&background=random&color=ffffff&size=128`,
+        profilePicture: `https://ui-avatars.com/api/?name=${encodeURIComponent(faker.person.fullName())}&background=random&color=ffffff&size=128`,
         bio: faker.lorem.sentence(),
         location: faker.location.city(),
       },
